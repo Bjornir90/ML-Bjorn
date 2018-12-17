@@ -16,7 +16,7 @@ public class Main {
         testDataA.add(0.0f);
         testDataB.add(0.0f);
         expectedResult.add(0.0f);
-        InputPerceptron ipa = new InputPerceptron(), ipb = new InputPerceptron();
+        Input ipa = new Input(), ipb = new Input();
         OutputPerceptron op = new OutputPerceptron(2, 0.3f);
         op.addInput(ipa);
         op.addInput(ipb);

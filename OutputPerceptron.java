@@ -19,9 +19,9 @@ public class OutputPerceptron extends Perceptron{
 		errorTotal += error;
 		float weightedError = error*learningRate;
 		for (int i = 0; i < weights.length-1; i++) {
-			weights[i] = weights[i]+weightedError*previousLayer.get(i).computeOutput();
+			weights[i] += weightedError*previousLayer.get(i).computeOutput();
 		}
-		weights[weights.length-1] = weights[weights.length-1]+weightedError*bias;
+		weights[weights.length-1] += weightedError*bias;
 	}
 
 	public float getError() {

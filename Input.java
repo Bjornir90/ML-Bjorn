@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
-public class InputPerceptron implements CalculUnit{
+public class Input implements CalculUnit{
 	private float currentData;
 
-	public InputPerceptron() {
+	public Input() {
 
 	}
 
